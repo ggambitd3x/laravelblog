@@ -11,8 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('news', 'DefaultController@index');
+Route::get('/', 'NewsController@index');
+ROute::get('/about', 'AboutController');
+//Route::get('/news', 'DefaultController@index');
